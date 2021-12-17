@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popcat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container my-5 text-center">
+        <div class="h3">Popcat!!</div>
+        <div class="h5 mt-5">↓↓↓ pop the cat with your hands ↓↓↓</div>
+        <video class="d-none" id="video"></video>
+        <div class="h5 mt-5" id="statusLabel">Loading...</div>
+        <div class="container position-relative" id="content">
+            <canvas id="canvas"></canvas>
+            <img class="d-none" src="img/popcat_shut.png" id="popcat" alt="">
+        </div>
+        
+    </div>
+    <div class="container text-center">
+        <a href="/" class="btn btn-primary" role="button">Back to Home</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/handtrackjs@latest/dist/handtrack.min.js"> </script>
+    <script src="script.js"></script>
+</body>
+</html>
